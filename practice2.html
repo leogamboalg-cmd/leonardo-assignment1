@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mac Miller</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@font-face {
+    font-family: 'yuh';
+    src: url(ConcertOne-Regular.ttf);
+}
+
+/* Global Styles */
+body {
+    background-color: #e5e5f7;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), 
+                      repeating-linear-gradient(#f5b5fa55, #f5b5fa);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: yuh;
+    font-size: clamp(2rem, 6vw, 5rem);
+    color: black;
+    border-bottom: double 10px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+/* Subtitle */
+#respect {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Main Image */
+#macfirst {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+}
+
+/* Section: Who Was Mac Miller */
+#Who {
+    font-family: yuh;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-top: 2rem;
+}
+
+.who-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.who-text {
+    flex: 1 1 300px;
+    font-family: yuh;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.who-image, .macsit-image {
+    flex: 1 1 200px;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Albums Section */
+#Albums {
+    font-family: yuh;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-top: 3rem;
+}
+
+.album-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: yuh;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.album-container img {
+    flex: 1 1 150px;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* GIF */
+#macsmilegif {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .who-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .album-container {
+        gap: 0.5rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="title-container">
+    <h1>Mac Miller</h1>
+</div>
+
+<h2 id="respect">
+    In loving memory of the remarkable American Hip-Hop Artist and Record Producer. Forever in our hearts.
+</h2>
+
+<img id="macfirst" src="macfirst.jpg" alt="Mac Miller">
+
+<h3 id="Who">Who Was Mac Miller?</h3>
+
+<div class="who-section">
+    <img class="who-image" src="Who.jpg" alt="Mac Smiling">
+    <div class="who-text">
+        <p>- Mac Miller was a super talented rapper known for his smooth flow and relatable lyrics.</p>
+        <p>- He began to gain popularity with his mixtapes "K.I.D.S." and "Best Day Ever", showcasing his talent.</p>
+        <p>- His music had a profound impact, touching the hearts of many listeners.</p>
+        <p>- Mac Miller's ability to blend introspective verses with catchy hooks resonated with fans worldwide.</p>
+    </div>
+    <img class="macsit-image" src="macsit.jpg" alt="Mac Sitting">
+</div>
+
+<h3 id="Albums">Mac Miller Albums</h3>
+
+<div class="album-text">
+    <p>
+        Mac Miller released six studio albums, two extended plays, two live albums, thirteen mixtapes, 
+        forty-four singles, and sixty-three music videos. His final s

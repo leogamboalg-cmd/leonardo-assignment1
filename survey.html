@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey</title>
+</head>
+<body>
+	<form action="" method="POST">
+
+		<fieldset>
+			<legend></legend>
+		</fieldset><br>
+
+		<label for="name">Enter your name:</label> 
+		<input type="text" id="name" name="name" placeholder="first name last name" required>
+
+		<br><br>
+		<label for="broncoId">Bronco ID:</label>
+		<input type="number" id="broncoId" name="broncoId" placeholder="Enter number only" min="0" required>
+
+		<br><br>
+
+		<label for="course">Which course are you taking this semester?</label>
+		<select name="course" id="course">
+			<option value="" disabled>CPP CS course only</option>
+			<option value="1300" selected>CS 1300</option>
+			<option value="1400">CS 1400</option>
+			<option value="1600">CS 1600</option>
+			<option value="0">None of the above</option>
+		</select> <br><br>
+
+		<!-- <label for="courses">Which course are you taking this semester?</label>
+		<br>
+		<select name="courses" id="courses" multiple>
+			<option value="" disabled>CPP CS course only</option>
+			<option value="1300" selected>CS 1300</option>
+			<option value="1400">CS 1400</option>
+			<option value="1600">CS 1600</option>
+			<option value="0">None of the above</option>
+		</select> <br><br>>
+		-->
+
+		<!-- <label for="class">Choose a course:</label>
+		<input list="classes" type="text" id="class" name="class" value="CS 2250">	
+		<datalist id="classes">
+			<option value="CS 1300">
+			<option value="CS 1400">
+			<option value="CS 2250">
+			<option value="CS 3310">
+		</datalist>
+		-->
+
+		<div>
+			Are you a freshman?<br>
+			<input type="radio" id="freshman-yes" name="freshman" value="yes"><label for="freshman-yes">Yes</label>
+			<input type="radio" id="freshman-no" name="freshman" value="no"><label for="freshman-no">No</label>
+		</div>
+		<br>
+		<div>
+			<label for="comments">Other comments (optional):</label>
+			<br><br>
+			<textarea name="comments" id="comments" cols="100" rows="10"></textarea>
+		</div><br>
+
+		<input type="submit">
+
+	</form>
+</body>
+</html>
